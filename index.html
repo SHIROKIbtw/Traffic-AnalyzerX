@@ -4,34 +4,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_favic.jfif" type="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js" defer></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Traffic AnalyzerX</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
+            <div id="modal" class="modal modalview">
+            <div class="modalContent">
+                <div class="modalText">Остались вопросы?<br>Задайте их нам</div>
+                <div class="">Задайте нам свой вопрос</div>
+                <div id="closeModal" class="modalX">x</div>
+            </div>
+        </div>
     <div class="container">
 
             <nav class="nav">
            <div class="nav-bar">
-            <div class="logo">
+            <div class="logo1">
                 <img src="img/logo.svg" alt="">
             </div>
             <div class="nav-li">
-                <a href="#" class="about">Почему мы</a>
-                <a href="#" class="about">Возможности</a>
-                <a href="#" class="about">Тарифы</a>
+                <a href="#1" class="about">Почему мы</a>
+                <a href="#2" class="about">Возможности</a>
+                <a href="#3" class="about">Подвал</a>
             </div>
             <div class="nav-login">
                 <a href="" class="registration">Регистрация</a>
-                <a href="" class="login">Логин</a>
+                <a href="" class="login">Вход</a>
             </div>
            </div>
             </nav>
             <div class="input">
-                <input class="input-poisk" type="text" placeholder="Введите адрес сайта.">
-                <button><img src="img/searchlupa.svg" alt=""></button>
+                <input class="input-search" type="text" placeholder="Введите запрос или адрес сайта.">
+                <button><img class="icn-search" src="img/search3.svg" alt=""></button>
             </div>
-
+            <div class="introTitle">Следите за аналитикой с помощью панели мониторинга.</div>
+            <div class="headerContent">
+                <div class="headerTitle">ПОСЕЩАЕМОСТЬ & ВОВЛЕЧЕНИЕ</div>
+                <div class="hCart">
+                    <div class="leftCart">
+                        <div class="leftTitle">На ПК & мобильных, за последние 6 месяцев</div>
+                        <div class="chart">
+                            <canvas width="300px" height="300px" id="myChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="hCartR">
+                        <div class="">Вовлечение</div>
+                        <div class="textRcart">Май, 2024</div>
+                        <div class="flexText">
+                            <img src="img/icon.svg" alt="">
+                            <div class="flexk">Всего визитов</div>
+                            <div class="">1000</div>
+                        </div>
+                        <div class="flexText">
+                            <img src="img/clock_hour_minute_second_time_timer_watch_icon_123193 1.svg" alt="">
+                            <div class="flexk">Время на сайте</div>
+                            <div class="">00:11:11</div>
+                        </div>
+                        <div class="flexText">
+                            <img src="img/text-document-page_icon-icons 1.svg" alt="">
+                            <div class="flexk">Страниц посещено за визит</div>
+                            <div class="">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 
-    
+    <section>
+        <div class="analyze">
+            <div class="container">
+                <div class="aTitle" id="1">Мы анализируем</div>
+                <div class="aContent">
+                    <div class="aCart">
+                        <img src="img/twotone.svg" alt="">
+                        <div class="cartTitle">1B+</div>
+                        <div class="aText">Вебсайтов</div>
+                    </div>
+                    <div class="aCart">
+                        <img src="img/fluent_phone-20-regular.svg" alt="">
+                        <div class="cartTitle">8M+</div>
+                        <div class="aText">Приложений</div>
+                    </div>
+                    <div class="aCart">
+                        <img src="img/ph_microscope.svg" alt="">
+                        <div class="cartTitle">5B+</div>
+                        <div class="aText">Ключей</div>
+                    </div>
+                    <div class="aCart">
+                        <img src="img/solar_cup-bold-duotone.svg" alt="">
+                        <div class="cartTitle">3M+</div>
+                        <div class="aText">Брэндов</div>
+                    </div>
+                    <div class="aCart">
+                        <img src="img/mdi_event-outline.svg" alt="">
+                        <div class="cartTitle">1B+</div>
+                        <div class="aText">Дневных событий</div>
+                    </div>
+                    <div class="aCart">
+                        <img src="img/carbon_ibm-secure-infrastructure-on-vpc-for-regulated-industries.svg" alt="">
+                        <div class="cartTitle">210</div>
+                        <div class="aText">Предприятий</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+        <div class="aTitle bTitle" id="2">Используйте проверку позиций и:</div>
+        <div class="featuresContent">
+            <div class="featuresCart">
+                <div class="featuresCartTitle">
+                    <img src="img/gol.svg" alt="">
+                    <div class="">Отслеживайте позиции конкурентов</div>
+                </div>
+                <div class="featuresCartText">Следите, как ваш сайт выглядит в сравнении с сайтами конкурентов</div>
+            </div>
+
+            <div class="featuresCart">
+                <div class="featuresCartTitle f1">
+                    <img src="img/gol.svg" alt="">
+                    <div class="">Корректрируйте свою стратегию</div>
+                </div>
+                <div class="featuresCartText">Заранее замечайте наиболее перспективные ключевые слова и страницы, на которых следует сосредоточиться
+                </div>
+            </div>
+
+            <div class="featuresCart">
+                <div class="featuresCartTitle f2">
+                    <img src="img/gol.svg" alt="">
+                    <div class="">Определяйте лучшие ключевые слова
+                </div>
+                </div>
+                <div class="featuresCartText">Найдите ключевые слова и страницы сайта, приносящие вам больше всего трафика</div>
+            </div>
+            <div class="featuresCart">
+                <div class="featuresCartTitle f3">
+                    <img src="img/gol.svg" alt="">
+                    <div class="">Предотвратите каннибализацию</div>
+                </div>
+                <div class="featuresCartText">Определяйте страницы, конкурирующие за одно ито же ключевое слово, и устраните это вовремя</div>
+            </div>
+            <div class="featuresCart">
+                <div class="featuresCartTitle f4">
+                    <img src="img/gol.svg" alt="">
+                    <div class="">Обеспечьте стабильный трафик</div>
+                </div>
+                <div class="featuresCartText">Предостерегайте падение трафика благодаря тому, что всегда знаете собственные позиции</div>
+            </div>
+            <div class="featuresCart">
+                <div class="featuresCartTitle f5">
+                    <img src="img/gol.svg" alt="">
+                    <div class="">Следите за обновлениями</div>
+                </div>
+                <div class="featuresCartText">Всегда будьте в курсе того, как обновление алгоритма повлияло на позиции вашего сайта</div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="aTitle">Работать с нами просто и удобно. <br> И вот почему</div>
+            <div class="bContent">
+            <div class="bCart">
+            <img src="img/clarity_clock-line.svg" alt="">
+            <div class="cardTitle">Техподдержка всегда готова помочь</div>
+            <div class="bText">Помогаем разобраться с работой сервиса и даём подробные советы.</div>
+            </div>
+            <div class="bCart">
+            <img src="img/gg_check-o.svg" alt="">
+            <div class="cardTitle">Закроем все ваши технические потребности</div>
+            <div class="bText">У нас есть продукты для стриминга, хранения информации и размещения проектов на мощной инфраструктуре. Плюс можем
+            защитить ваш сервис от DDoS-атак.</div>
+            </div>
+            <div class="bCart">
+            <img src="img/gala_settings.svg" alt="">
+            <div class="cardTitle">Можно настроить точно под ваш проект</div>
+            <div class="bText">Помогаем разобраться с работой сервиса и даём подробные советы.</div>
+            </div>
+            <div class="bCart">
+            <img src="img/uil_server.svg" alt="">
+            <div class="cardTitle">TFX — российский поставщик</div>
+            <div class="bText">Помогаем разобраться с работой сервиса и даём подробные советы.</div>
+            </div>
+            </div>
+            </div>
+    </section>
+    <footer class="footer" id="3">
+        <div class="logo"><img src="img/logo-footer.svg" alt=""></div>
+        <div class="aTitle">Облачные и TFX-решения <br> от одного поставщика</div>
+        <div class="btn-flex">
+            <button class="btn-footer">Опробовать</button>
+            <button class="btn-footer btn-f2" id="open-modal">Задать вопрос</button>
+        </div>
+        <hr class="hr-line">
+        <div class="footer-podval">
+            <div>
+                <div class="">Продукты
+                </div>
+                    <div class="footer-text">Облако</div>
+                    <div class="footer-text">Защита</div>
+                    <div class="footer-text">Хостинг</div>
+                </div>
+            <div>
+                <div>Решения
+                </div>
+                    <div class="footer-text">Игры</div>
+                    <div class="footer-text">Медиа</div>
+                    <div class="footer-text">Образование</div>
+                </div>
+            <div>
+                <div>Контакты 
+                </div>
+                    <div class="footer-text">Одноклассники</div>
+                    <div class="footer-text">Telegram</div>
+                    <div class="footer-text">VK</div>
+                </div>
+        </div>
+    </footer>
 </body>
 </html>
